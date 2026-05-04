@@ -1,16 +1,16 @@
-# Automaticky-teplotní-spínač-pro-ventilator
-# 🌡️ Automatický teplotní spínač pro ventilátor (12V)
+
+#  Automatický teplotní spínač pro ventilátor (12V)
 
 Tento ročníkový projekt představuje automatický systém chlazení, který spíná 12V ventilátor na základě okolní teploty. Oproti jednodušším spínačům využívá tento systém operační zesilovač v roli komparátoru. Tím je zajištěno přesné sepnutí a zabrání se částečnému otevírání tranzistoru při hraničních teplotách, což by vedlo k jeho zbytečnému a nebezpečnému zahřívání.
 
-## 📋 Hlavní vlastnosti
+##  Hlavní vlastnosti
 
 *   **Přesné spínání (0 nebo 1):** Komparátor zajistí okamžité zapnutí ventilátoru na 100 % výkonu bez zpoždění.
 *   **Ochrana elektroniky:** Integrovaná ochranná dioda chrání systém před napěťovými špičkami (zpětnými proudy) z indukční zátěže motorku ventilátoru.
 *   **Nastavitelná citlivost:** Možnost přesného nastavení prahové teploty sepnutí pomocí trimru.
 *   **Univerzálnost:** Možnost využití standardních 12V PC ventilátorů.
 
-## 🛠 Seznam součástek
+##  Seznam součástek
 
 | Součástka | Specifikace | Funkce |
 | :--- | :--- | :--- |
@@ -24,7 +24,7 @@ Tento ročníkový projekt představuje automatický systém chlazení, který s
 | **Dioda** | 1N4007 | "Flyback" ochranná dioda zapojená paralelně k ventilátoru |
 | **Zátěž** | 12 V PC ventilátor | Aktivní prvek chlazení |
 
-## ⚙️ Technický princip (Shrnutí funkce)
+##  Technický princip (Shrnutí funkce)
 
 Systém neustále porovnává dvě různá napětí a na základě výsledku skokově otevírá výkonový tranzistor.
 1.  **Snímání teploty:** NTC termistor a pevný rezistor tvoří první napěťový dělič. S rostoucí teplotou se mění úroveň napětí v tomto uzlu.
@@ -32,7 +32,7 @@ Systém neustále porovnává dvě různá napětí a na základě výsledku sko
 3.  **Porovnání:** Integrovaný obvod LM358 funguje jako komparátor, který neustále porovnává napětí ze senzoru s napětím z trimru.
 4.  **Sepnutí:** Jakmile napětí ze senzoru překročí referenční hodnotu z trimru, komparátor pošle na výstup plné napětí, čímž otevře MOSFET tranzistor a ventilátor se roztočí.
 
-## 🧠 Rozbor funkce jednotlivých částí obvodu
+##  Rozbor funkce jednotlivých částí obvodu
 
 Pro snazší pochopení detailního principu lze celé zapojení rozdělit do čtyř logických bloků:
 
@@ -49,7 +49,7 @@ Obvod LM358 funguje jako rozhodovací prvek, který obě hodnoty z děličů neu
 Výstup z komparátoru vede přes ochranný 1 kΩ rezistor na hradlo (Gate) MOSFETu. Rezistor omezuje nárazový proud při nabíjení vnitřní kapacity hradla. Přivedené napětí tranzistor plně otevře a propojí ventilátor se zemí (GND). Ventilátor (indukční zátěž s cívkami) generuje při vypnutí vysokou napěťovou špičku s opačnou polaritou, která by mohla tranzistor zničit. Ochranná "flyback" dioda (1N4007), zapojená paralelně k ventilátoru v nepropustném směru, tuto špičku bezpečně zkratuje a energii neškodně vybije.
 
 
-## 🚀 Příklady použití v praxi
+##  Příklady použití v praxi
 
 Tento typ automatického teplotního spínače nachází uplatnění všude tam, kde je potřeba autonomně regulovat teplotu bez nutnosti složitého programování nebo drahých řídících jednotek:
 
@@ -60,7 +60,7 @@ Tento typ automatického teplotního spínače nachází uplatnění všude tam,
 *   **Chlazení LED osvětlení:** Aktivní chlazení hliníkových chladičů u vysoce svítivých LED panelů (např. pro akvaristiku nebo pěstování rostlin), aby nedošlo k degradaci čipů teplem.
 *   **Karavany a kempování:** Automatické odvětrávání prostoru za kompresorovou nebo absorpční chladničkou v karavanu pro zvýšení její účinnosti v horkých dnech.
 
-## 📚 Zdroje (Citace)
+##  Zdroje (Citace)
 
 Při návrhu obvodu a popisu technických vlastností součástek bylo čerpáno z následujících zdrojů:
 
