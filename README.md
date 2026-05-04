@@ -74,3 +74,22 @@ Výstup z komparátoru vede přes ochranný 1 kΩ rezistor na hradlo (Gate) MOSF
        └───────────┴───────────┴──────────────────────────┘
                                │
                        GND (0V z adaptéru)
+## 🚀 Příklady použití v praxi
+
+Tento typ automatického teplotního spínače nachází uplatnění všude tam, kde je potřeba autonomně regulovat teplotu bez nutnosti složitého programování nebo drahých řídících jednotek:
+
+*   **Chlazení výkonové elektroniky:** Automatické odvětrávání nf zesilovačů, výkonových počítačových zdrojů nebo měničů napětí, které se zahřívají pouze při vyšší zátěži.
+*   **3D tiskárny a uzavřené boxy:** Udržování stabilní a bezpečné teploty v uzavřeném prostoru (tzv. enclosure) 3D tiskárny pro zamezení kroucení výtisků.
+*   **Skleníky a terária:** Automatická cirkulace vzduchu a spínání odvětrávání při přehřátí uzavřeného prostoru v letních měsících, což chrání rostliny a zvířata.
+*   **Serverové a rackové skříně:** Doplňkové nezávislé chlazení domácího NAS serveru, switche nebo routeru umístěného v uzavřené skříňce.
+*   **Chlazení LED osvětlení:** Aktivní chlazení hliníkových chladičů u vysoce svítivých LED panelů (např. pro akvaristiku nebo pěstování rostlin), aby nedošlo k degradaci čipů teplem.
+*   **Karavany a kempování:** Automatické odvětrávání prostoru za kompresorovou nebo absorpční chladničkou v karavanu pro zvýšení její účinnosti v horkých dnech.
+
+## 📚 Zdroje (Citace)
+
+Při návrhu obvodu a popisu technických vlastností součástek bylo čerpáno z následujících zdrojů:
+
+1. *NTC termistorové aplikace pro snímání teploty*. DXM [online]. Dostupné z: https://www.dxmht.com/cs/case/ntc-thermistor-applications.html
+2. *LM358 vs. LM393: Rozdíly mezi OP zesilovači a komparátory*. Allelco [online]. 2024. Dostupné z: https://www.allelcoelec.cz/blog/lm358-vs.lm393-learn-about-the-lm358-op-amp-and-the-differences-between-op-amps-and-comparators.html
+3. *Spínací prvky – relé, tranzistory a tranzistorová pole*. Návody Drátek [online]. Dostupné z: https://navody.dratek.cz/technikuv-blog/spinaci-prvky-rele-tranzistory-a-tranzistorova-pole.html
+4. *Co je MOSFET a jak funguje v elektronice*. Wonderful PCB [online]. Dostupné z: https://www.wonderfulpcb.com/cs/blog/what-is-a-mosfet-and-how-does-it-work-in-electronics/
