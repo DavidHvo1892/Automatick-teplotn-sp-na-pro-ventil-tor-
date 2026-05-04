@@ -1,4 +1,4 @@
-# Automatick-teplotn-sp-na-pro-ventil-tor-
+# Automaticky-teplotní-spínač-pro-ventilator
 # 🌡️ Automatický teplotní spínač pro ventilátor (12V)
 
 Tento ročníkový projekt představuje automatický systém chlazení, který spíná 12V ventilátor na základě okolní teploty. Oproti jednodušším spínačům využívá tento systém operační zesilovač v roli komparátoru. Tím je zajištěno přesné sepnutí a zabrání se částečnému otevírání tranzistoru při hraničních teplotách, což by vedlo k jeho zbytečnému a nebezpečnému zahřívání.
