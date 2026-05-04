@@ -48,32 +48,7 @@ Obvod LM358 funguje jako rozhodovací prvek, který obě hodnoty z děličů neu
 ### 4. Výkonový a ochranný blok (Spínač a zátěž)
 Výstup z komparátoru vede přes ochranný 1 kΩ rezistor na hradlo (Gate) MOSFETu. Rezistor omezuje nárazový proud při nabíjení vnitřní kapacity hradla. Přivedené napětí tranzistor plně otevře a propojí ventilátor se zemí (GND). Ventilátor (indukční zátěž s cívkami) generuje při vypnutí vysokou napěťovou špičku s opačnou polaritou, která by mohla tranzistor zničit. Ochranná "flyback" dioda (1N4007), zapojená paralelně k ventilátoru v nepropustném směru, tuto špičku bezpečně zkratuje a energii neškodně vybije.
 
-## 🔌 Schéma zapojení
 
-```text
-                     +12V (VCC z adaptéru)
-                               │
-       ┌───────────┬───────────┼───────────┬──────────────┐
-       │           │           │           │              │
-      [NTC]        │       Pin 8 (VCC)     │              │
-       │           │         LM358         │             (+)
-       ├───────► Pin 3                     │          Ventilátor
-       │         (IN+)                     │             (-)
-      [R 10k]      │                       │              │
-       │           │         LM358       Katoda ──[Dioda]─┤
-      GND          │      Pin 1 (OUT)    Anoda            │
-                   │           │                          │
-      +12V         │           ├────[R 1k]─────► Gate (G) │
-       │           │           │                          │
-     [Trimr] ──► Pin 2         │                        Drain (D)
-     (10k)       (IN-)         │                         MOSFET
-       │                       │                        Source (S)
-      GND                  Pin 4 (GND)                    │
-                             LM358                        │
-                               │                          │
-       └───────────┴───────────┴──────────────────────────┘
-                               │
-                       GND (0V z adaptéru)
 ## 🚀 Příklady použití v praxi
 
 Tento typ automatického teplotního spínače nachází uplatnění všude tam, kde je potřeba autonomně regulovat teplotu bez nutnosti složitého programování nebo drahých řídících jednotek:
