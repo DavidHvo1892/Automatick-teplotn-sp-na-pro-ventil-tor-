@@ -64,7 +64,7 @@ Tento typ automatického teplotního spínače nachází uplatnění všude tam,
 
 Při návrhu obvodu a popisu technických vlastností součástek bylo čerpáno z následujících zdrojů:
 
-1. *NTC termistorové aplikace pro snímání teploty*. DXM [online]. Dostupné z: https://www.dxmht.com/cs/case/ntc-thermistor-applications.html
-2. *LM358 vs. LM393: Rozdíly mezi OP zesilovači a komparátory*. Allelco [online]. 2024. Dostupné z: https://www.allelcoelec.cz/blog/lm358-vs.lm393-learn-about-the-lm358-op-amp-and-the-differences-between-op-amps-and-comparators.html
-3. *Spínací prvky – relé, tranzistory a tranzistorová pole*. Návody Drátek [online]. Dostupné z: https://navody.dratek.cz/technikuv-blog/spinaci-prvky-rele-tranzistory-a-tranzistorova-pole.html
-4. *Co je MOSFET a jak funguje v elektronice*. Wonderful PCB [online]. Dostupné z: https://www.wonderfulpcb.com/cs/blog/what-is-a-mosfet-and-how-does-it-work-in-electronics/
+1. NTC termistorové aplikace pro snímání teploty. DXM [online]. Dostupné z: https://www.dxmht.com/cs/case/ntc-thermistor-applications.html
+2. LM358 vs. LM393: Rozdíly mezi OP zesilovači a komparátory. Allelco [online]. 2024. Dostupné z: https://www.allelcoelec.cz/blog/lm358-vs.lm393-learn-about-the-lm358-op-amp-and-the-differences-between-op-amps-and-comparators.html
+3. Spínací prvky – relé, tranzistory a tranzistorová pole. Návody Drátek [online]. Dostupné z: https://navody.dratek.cz/technikuv-blog/spinaci-prvky-rele-tranzistory-a-tranzistorova-pole.html
+4. Co je MOSFET a jak funguje v elektronice. Wonderful PCB [online]. Dostupné z: https://www.wonderfulpcb.com/cs/blog/what-is-a-mosfet-and-how-does-it-work-in-electronics/
